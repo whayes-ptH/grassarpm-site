@@ -3,7 +3,7 @@
 :root {
   --ink: #08182d;
   --ink-2: #102640;
-  --gold: #d4b36f;
+  --gold: #c09a4a;
   --gold-soft: #f0e4c9;
   --paper: #f6f4ef;
   --white: #ffffff;
@@ -31,7 +31,7 @@ h3 { line-height: 1.18; }
 p { color: var(--muted); }
 .lead { color: var(--ink); font-family: var(--display); font-size: clamp(1.35rem, 2.5vw, 2.05rem); line-height: 1.42; }
 .button { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; gap: 22px; border: 1px solid var(--gold); background: var(--gold); color: var(--ink); padding: 14px 22px; font-size: .86rem; font-weight: 700; letter-spacing: .04em; transition: .25s ease; }
-.button:hover { background: #e2c98f; border-color: #e2c98f; transform: translateY(-2px); }
+.button:hover { background: #d8b96f; border-color: #d8b96f; transform: translateY(-2px); }
 .button-small { min-height: 42px; padding: 10px 16px; font-size: .76rem; }
 .button-light { background: var(--white); border-color: var(--white); }
 .text-link { display: inline-flex; align-items: center; gap: 15px; border-bottom: 1px solid currentColor; padding-bottom: 3px; font-size: .84rem; font-weight: 700; letter-spacing: .03em; }
@@ -39,11 +39,13 @@ p { color: var(--muted); }
 
 .site-header { position: absolute; z-index: 20; top: 0; left: 0; width: 100%; border-bottom: 1px solid rgba(255,255,255,.16); background: rgba(4,17,32,.72); color: var(--white); backdrop-filter: blur(14px); }
 .header-inner { height: 88px; display: flex; align-items: center; gap: 38px; }
-.brand { display: inline-flex; align-items: center; gap: 11px; color: inherit; line-height: 1; }
-.brand-mark { width: 38px; height: 38px; fill: currentColor; }
-.brand-mark-accent { fill: var(--gold); }
-.brand strong { display: block; font-family: var(--display); font-size: 1.34rem; font-weight: 400; letter-spacing: .01em; }
-.brand small { display: block; margin-top: 5px; font-size: .55rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.brand { display: inline-flex; align-items: center; gap: 14px; color: inherit; line-height: 1; }
+.brand-mark { width: 46px; height: 46px; flex: 0 0 46px; }
+.brand-mark-frame, .brand-mark-prime, .brand-mark-rule { fill: var(--gold); }
+.brand-mark-letter { fill: currentColor; }
+.brand-copy { display: block; }
+.brand strong { display: block; font-family: var(--display); font-size: 1.24rem; font-weight: 600; letter-spacing: .105em; text-transform: uppercase; }
+.brand small { display: block; margin-top: 6px; font-size: .5rem; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
 .desktop-nav { display: flex; gap: 28px; margin-left: auto; }
 .desktop-nav a { font-size: .78rem; font-weight: 600; letter-spacing: .03em; }
 .desktop-nav a:hover { color: var(--gold-soft); }
